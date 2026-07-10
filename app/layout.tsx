@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Space_Grotesk, JetBrains_Mono, IBM_Plex_Mono } from 'next/font/google';
 import { Navbar } from '@/components/Navbar';
 import { LoadingScreen } from '@/components/LoadingScreen';
+import { AnimatedBackground } from '@/components/AnimatedBackground';
 import './globals.css';
 
 const spaceGrotesk = Space_Grotesk({
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body>
         <LoadingScreen />
         <Navbar />
+        <AnimatedBackground />
         {children}
       </body>
     </html>

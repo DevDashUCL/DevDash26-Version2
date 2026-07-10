@@ -6,17 +6,18 @@ import { TeamSection } from '@/components/TeamSection';
 import { FAQSection } from '@/components/FAQSection';
 import { FinalCTA } from '@/components/FinalCTA';
 import { Footer } from '@/components/Footer';
+import { Reveal } from '@/components/Reveal';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <AboutDevDash />
-      <TimelineSection />
-      <PrizesSection />
-      <TeamSection />
-      <FAQSection />
-      <FinalCTA />
+      <Reveal><AboutDevDash /></Reveal>
+      <Reveal><TimelineSection /></Reveal>
+      <Reveal stagger staggerItem=".prize-card"><PrizesSection /></Reveal>
+      <Reveal stagger staggerItem=".team-card"><TeamSection /></Reveal>
+      <Reveal><FAQSection /></Reveal>
+      <Reveal><FinalCTA /></Reveal>
       <Footer />
     </>
   );
