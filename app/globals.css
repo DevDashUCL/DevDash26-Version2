@@ -1251,6 +1251,25 @@ footer .closing {
   footer .footer-logos {
     justify-content: center;
   }
+
+  .team-card:hover,
+  .team-card {
+    border-color: var(--accent);
+    background: rgba(46, 204, 64, 0.04);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(46, 204, 64, 0.08);
+  }
+
+  .team-card:hover .team-card-name,
+  .team-card-name {
+    color: var(--accent);
+  }
+
+  .team-card-contact {
+    opacity: 1;
+    max-height: 120px;
+    margin-top: 0.75rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
